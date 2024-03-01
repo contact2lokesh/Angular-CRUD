@@ -1,0 +1,22 @@
+<div>
+    <form class="submit-form" [formGroup]="createTaskForm" *ngIf="!submitted">
+        <div>
+            <label for="title">Title</label>
+            <input type="text" formControlName="title" class="form-control" />
+            <h5 class="red-text" [hidden]="createTaskForm.get('title')?.valid || createTaskForm.get('title')?.untouched">Title Required</h5>
+        </div>
+        <div>
+            <label for="description">Description</label>
+            <input type="text" formControlName="description" class="form-control" />
+        </div>
+        <button (click)="onSubmit()" class="btn btn-success mt-3" [disabled]="createTaskForm.invalid">Submit</button>
+        <button (click)="reset()" class="btn btn-dark mt-3 ml-3">Reset</button>
+
+    </form>
+    <div *ngIf="submitted"  class="m-auto">
+        <h4>Task Added Successfully</h4>
+        <button class="btn btn-success" (click)="addNewTask()">Add New Task</button>
+      </div>
+</div>
+
+

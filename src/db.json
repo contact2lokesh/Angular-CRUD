@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": "6c08",
+      "name": "Lokesh",
+      "email": "lokesh@gmail.com",
+      "username": "Lokesh",
+      "password": "Lokesh@123",
+      "confirmPassword": "Lokesh@123"
+    },
+    {
+      "id": "9ac4",
+      "name": "Lokesh",
+      "email": "Lokesh@gmail.com",
+      "username": "lokesh",
+      "password": "Lokesh@123",
+      "confirmPassword": "Lokesh@123"
+    }
+  ],
+  "task": [
+    {
+      "id": "f1cc",
+      "title": "kjdgnjlnenj",
+      "description": "dfnlblknbben",
+      "published": "false"
+    }
+  ]
+}
